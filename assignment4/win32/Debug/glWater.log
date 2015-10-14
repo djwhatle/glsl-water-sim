@@ -1,23 +1,17 @@
-﻿Build started 10/14/2015 12:33:24 AM.
-     1>Project "C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\glWater.vcxproj" on node 2 (build target(s)).
+﻿Build started 10/14/2015 2:41:26 PM.
+     1>Project "C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\glWater.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\glslWater.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\glew\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\glslWater.cpp
-         glslWater.cpp
+         All outputs are up-to-date.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\Debug\glslWater.exe" /NOLOGO /LIBPATH:C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\glew\lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\glslWater.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\Debug\glslWater.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\Debug\glslWater.lib" /MACHINE:X86 Debug\lodepng.obj
-         Debug\glslWater.obj
-         Debug\matrix.obj
-         LINK : C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\Debug\glslWater.exe not found or not built by the last incremental link; performing full link
-         glWater.vcxproj -> C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\Debug\glslWater.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\Debug\glslWater.exe;#1" /manifest Debug\glslWater.exe.intermediate.manifest
+         All outputs are up-to-date.
+         glWater.vcxproj -> C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\Debug\glslWater.exe
        FinalizeBuildStatus:
          Deleting file "Debug\glslWater.unsuccessfulbuild".
          Touching "Debug\glslWater.lastbuildstate".
-     1>Done Building Project "C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4_attempt2\win32\glWater.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\glWater.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.22
+Time Elapsed 00:00:00.21
