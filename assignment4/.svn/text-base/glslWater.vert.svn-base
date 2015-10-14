@@ -1,0 +1,39 @@
+
+#version 150
+
+/* Per-vertex input from application */
+in vec3 vPosition;
+in vec2 vTexCoord;
+
+/* Uniform input from application */
+/* Same value for all vertices */
+uniform float time;
+uniform mat4 ModelViewProjectionMatrix;
+uniform vec3 vCameraPos;
+
+/* Tangent basis */
+out vec3	Binormal,
+			Tangent,
+			Normal;
+				
+/* View vector */
+out vec3	View;
+
+/* Multiple bump coordinates for animated bump mapping */
+out vec2	bumpCoord0,
+			bumpCoord1,
+			bumpCoord2;
+
+
+void main()
+{
+	vec4 P = vec4(vPosition, 1.0);
+	
+	/* TODO: Add waves to P */
+    
+	/* TODO: Compute B, T, N */
+    
+	/* TODO: Compute bumpmap coordinates */
+	
+	gl_Position = ModelViewProjectionMatrix * P;
+}
