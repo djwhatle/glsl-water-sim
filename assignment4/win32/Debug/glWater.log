@@ -1,4 +1,4 @@
-﻿Build started 10/14/2015 2:41:26 PM.
+﻿Build started 10/15/2015 8:30:42 AM.
      1>Project "C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\glWater.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\glslWater.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -14,4 +14,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.21
+Time Elapsed 00:00:00.06

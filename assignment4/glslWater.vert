@@ -33,8 +33,8 @@ void main()
 	
 	View = normalize(vCameraPos - vPosition);
 
-	/* TODO: Add waves to P */
-	/* Height Y is parametrically from X and Z coordinates and two sine waves*/
+	/* DONE: Add waves to P */
+	/* Height Y is parametrically from X and Z coordinates which feed two sine waves*/
 	/* WAVE 1*/
 	float amplitude = 1.0;
 	float frequency = 0.2;
@@ -43,12 +43,14 @@ void main()
 	float phase = 0.5;
 	float sharpness = 2.0;
 
+	/* partial derivative allows us to compute the normal, tangent, and binormal vectors for any point */
 	float dG_dx_1 = wave_partial_derivative(amplitude, direction_x, direction_z, frequency, phase,
 										    sharpness, time, vPosition.x, vPosition.z, direction_x);
 	float dG_dz_1 = wave_partial_derivative(amplitude, direction_x, direction_z, frequency, phase,
 										    sharpness, time, vPosition.x, vPosition.z, direction_z);
 	float sine_result_1 = wave_generate(amplitude, direction_x, direction_z, frequency, vPosition.x,
 										vPosition.z, phase, time, sharpness);
+
 	/* WAVE 2 */
 	amplitude = 0.5;
 	frequency = 0.4;
@@ -57,6 +59,7 @@ void main()
 	phase = 1.3;
 	sharpness = 2.0;
 
+	/* partial derivative allows us to compute the normal, tangent, and binormal vectors for any point */
 	float dG_dx_2 = wave_partial_derivative(amplitude, direction_x, direction_z, frequency, phase,
 										    sharpness, time, vPosition.x, vPosition.z, direction_x);
 	float dG_dz_2 = wave_partial_derivative(amplitude, direction_x, direction_z, frequency, phase,
@@ -64,10 +67,10 @@ void main()
 	float sine_result_2 = wave_generate(amplitude, direction_x, direction_z, frequency, vPosition.x,
 										vPosition.z, phase, time, sharpness);
 
-	/* Apply changes to P */
+	/* Apply changes to Vertex Position P's Y coordinate */
 	P.y = P.y + 3 * (sine_result_1 + sine_result_2);
 
-	/* TODO: Compute B, T, N */
+	/* DONE: Compute B, T, N */
 	float dH_dx = dG_dx_1 + dG_dx_2;
 	float dH_dz = dG_dz_1 + dG_dz_2;
 
@@ -75,11 +78,12 @@ void main()
 	Tangent =  vec3(0, dH_dz, 1);
 	Normal  =  vec3(-dH_dx, 1, -dH_dz); 
 
-	/* TODO: Compute bumpmap coordinates */
+	/* DONE: Compute bumpmap coordinates */
 	vec2 texScale = vec2(8,4);
 	float bumpTime = mod(time, 100.0);
 	vec2 bumpSpeed = vec2(-0.05, 0);
 
+	/* slide 3 rectangles across the bump map to achieve greater realism */
 	bumpCoord0.xy = vTexCoord.xy * texScale + bumpTime * bumpSpeed;
 	bumpCoord1.xy = vTexCoord.xy * texScale * 2 + bumpTime * bumpSpeed * 4;
 	bumpCoord2.xy = vTexCoord.xy * texScale * 4 + bumpTime * bumpSpeed * 8;
