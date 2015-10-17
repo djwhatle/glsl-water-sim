@@ -1,21 +1,12 @@
-﻿Build started 10/15/2015 8:45:45 AM.
+﻿Build started 10/17/2015 3:02:26 PM.
      1>Project "C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\glWater.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\glslWater.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\glew\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\lodepng.cpp ..\glslWater.cpp ..\matrix.cpp
-         lodepng.cpp
-         glslWater.cpp
-         matrix.cpp
+         All outputs are up-to-date.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\Release\glslWater.exe" /NOLOGO /LIBPATH:C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\\glew\lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\glslWater.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\Release\glslWater.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\Release\glslWater.lib" /MACHINE:X86 Release\lodepng.obj
-         Release\glslWater.obj
-         Release\matrix.obj
-         Generating code
-         Finished generating code
+         All outputs are up-to-date.
          glWater.vcxproj -> C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\Release\glslWater.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\derek\Desktop\EDA221_RenderChimp_15\assignment4\win32\Release\glslWater.exe;#1" /manifest Release\glslWater.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Release\glslWater.unsuccessfulbuild".
          Touching "Release\glslWater.lastbuildstate".
@@ -23,4 +14,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.96
+Time Elapsed 00:00:00.08
